@@ -1,0 +1,108 @@
+// #dcf5ff
+// #00b6ff
+// rgb(7, 218, 165)
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dcf5ff;
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+// Transition 1
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 30%;
+    cursor: pointer;
+    
+    .inner {
+        color: #fff;
+        background-color: #00b6ff;
+        border-radius: 10px;
+        padding: 1em;
+        width: 100%;
+        clip-path: circle(25% at 10% 0%);
+        transition: clip-path 0.5s ease-in-out;
+
+        h1 {
+            margin-top: 0;
+        }
+
+        p {
+            font-size: 0.8em;
+        }
+    }
+
+    &:hover .inner {
+        clip-path: circle(75%);
+    }
+}
+
+// Transition 2
+// .inner {
+//     color: #fff;
+//     background-color: #00b6ff;
+//     border-radius: 10px;
+//     padding: 1em;
+//     width: 260px;
+//     clip-path: circle(10% at 90% 15%);
+//     transition: all 0.5s ease-in-out;
+//     cursor: pointer;
+
+//     span {
+//         font-weight: 600;
+//         margin-right: 10px;
+//         float: right;
+//     }
+
+//     h1 {
+//         margin-top: 0;
+//     }
+
+//     p {
+//         font-size: 0.8em;
+//     }
+
+//     &:hover{
+//         background-color: rgb(7, 218, 165);
+//         clip-path: circle(75%);
+
+//         span {
+//             color: rgba(255, 255, 255, 0);
+//         }
+//     }
+// }
+
+// Transition 3
+// .container {
+//     background-color: #fff;
+//     border-radius: 10px;
+//     width: 30%;
+//     cursor: pointer;
+    
+//     .inner {
+//         color: #fff;
+//         background-color: #00b6ff;
+//         border-radius: 10px;
+//         padding: 1em;
+//         width: 100%;
+//         clip-path: inset(0% 0% 0% 100%);
+//         transition: clip-path 0.5s ease-in-out;
+
+//         h1 {
+//             margin-top: 0;
+//         }
+
+//         p {
+//             font-size: 0.8em;
+//         }
+//     }
+
+//     &:hover .inner {
+//         clip-path: inset(0% 0% 0% 0%);
+//     }
+// }
